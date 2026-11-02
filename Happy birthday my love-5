@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f6">
+<title>إلكِ وبس ♡</title>
+<style>
+:root{--pink:#e66a9b;--deep:#9d315f;--pale:#fff0f6;--white:#fff;--ink:#573044}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;background:linear-gradient(160deg,#fff8fb,#ffeaf3);color:var(--ink);min-height:100vh}
+button,input{font:inherit}
+button{cursor:pointer;border:0;border-radius:999px;padding:13px 22px;background:var(--pink);color:white;font-weight:700;box-shadow:0 8px 22px #e66a9b33}
+button:active{transform:scale(.98)}
+.wrap{width:min(900px,92%);margin:auto;padding:28px 0 50px}
+.panel{background:#ffffffd9;border:1px solid #f8c8dc;border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:0 20px 60px #a7447020;text-align:center}
+.heart{font-size:42px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+h1{font-size:clamp(28px,7vw,46px);margin:8px 0;color:var(--deep)}
+h2{color:var(--deep);margin:0 0 12px}
+p{line-height:1.9}
+.small{font-size:13px;color:#986b80}
+input[type=password]{width:min(100%,330px);padding:13px 16px;border:1px solid #eeb5cd;border-radius:14px;background:white;outline-color:var(--pink);text-align:center;margin:10px 0 14px}
+#error{color:#b42355;min-height:24px}
+.hidden{display:none!important}
+.section{margin-top:22px}
+.hero{padding:28px 0}
+.badge{display:inline-block;background:#ffe0ed;color:#9d315f;padding:7px 14px;border-radius:999px;font-size:13px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.photo{min-height:160px;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#ffe5ef;border:1px solid #f4bfd5;display:flex;align-items:center;justify-content:center;color:#a45176;padding:10px}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.letter{background:#fff8fb;border:1px dashed #e88db2;border-radius:22px;padding:22px;text-align:right;white-space:pre-line}
+.reveal{margin-top:16px}
+footer{margin-top:24px;font-size:12px;color:#9c7588}
+@media(min-width:650px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}.photo{aspect-ratio:3/4}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main id="lock" class="panel">
+    <div class="heart">♡</div>
+    <span class="badge">في مفاجأة صغيرة إلك</span>
+    <h1>إلكِ إنتِ وبس 🎀</h1>
+    <p>في أشياء حلوة جمعتها إلك، بس قبل ما تشوفيها… دخّلي كلمة السر اللي بيناتنا 💗</p>
+    <form id="unlockForm">
+      <input id="pass" type="password" placeholder="كلمة السر" autocomplete="off" aria-label="كلمة السر" required>
+      <br><button type="submit">افتحي هديتك ♡</button>
+    </form>
+    <div id="error" role="status"></div>
+    <p class="small">من شخص بتعنيله الدنيا كثير ✨</p>
+  </main>
+
+  <main id="gift" class="hidden">
+    <section class="panel hero">
+      <div class="heart">💗</div>
+      <span class="badge">اليوم يومك</span>
+      <h1>كل سنة وإنتِ أجمل حكاية 🎂</h1>
+      <p>يمكن المسافة بيناتنا كبيرة، بس مكانتك بقلبي أقرب من أي إشي. عملتلك هالمكان الصغير عشان يكون مليان أشياء بتذكّرني فيكِ.</p>
+    </section>
+    <section class="panel section">
+  <h2>صور وذكريات 📸</h2>
+  <p>كل صورة إلها حكاية، وكل حكاية إلها مكان خاص بقلبي.</p>
+  <div class="gallery" id="gallery">
+    <div class="photo"><img src="photo1.jpg" alt="صورة 1"></div>
+    <div class="photo"><img src="photo2.jpg" alt="صورة 2"></div>
+    <div class="photo"><img src="photo3.jpg" alt="صورة 3"></div>
+    <div class="photo"><img src="photo4.jpg" alt="صورة 4"></div>
+    <div class="photo"><img src="photo5.jpg" alt="صورة 5"></div>
+    <div class="photo"><img src="photo6.jpg" alt="صورة 6"></div>
+  </div>
+  </section>
+    <section class="panel section">
+      <h2>رسالة من قلبي إلك 💌</h2>
+      <div class="letter" id="loveLetter">كل عام وإنتِ بخير يا أجمل جزء من أيامي. ❤️
+
+بتمنّى أقدر أكون جنبك اليوم وأشوف فرحتك بعيني، بس لحد ما تجمعنا الأيام، حبيت أعملك هالمفاجأة الصغيرة عشان تعرفي قديش وجودك بحياتي غالي.
+
+إنتِ مش مجرد شخص بحكي معه كل يوم؛ إنتِ تفاصيل حلوة بتخلّي يومي ألطف، وصوت بيريّحني، وذكرى بتخلّيني أبتسم من غير ما أنتبه انتي الشخص الي دخل حياتي صدفة وما كانت متوقعة وصرتي اقرب مني الي فا بحكيلك انا بحبك طول العمر ومستحيل اتخلى عنك لاي سبب .
+
+بتمنالك سنة جديدة مليانة راحة وفرح ونجاحات، وإنك تضلّي دايمًا محاطة بالأشياء اللي بتحبيها وبالناس اللي بقدّروك. يا رب أكون سبب بضحكة حلوة على وجهك اليوم.
+
+عيد ميلاد سعيد، وإلك منّي كل الكلام الحلو اللي ما بتكفّيه رسالة وحدة. ♡</div>
+      <button class="reveal" id="surpriseBtn">في مفاجأة أخيرة… اضغطي هون 💝</button>
+      <div id="surprise" class="letter reveal hidden">أحلى هدية عندي مش صورة ولا رابط… أحلى إشي إنك موجودة بحياتي. بتمنّى هاليوم يضل ذكرى حلوة إلك، وكل سنة نلاقي أسباب أكثر نضحك ونفرح فيها سوا. ❤️</div>
+    </section>
+    <footer class="panel">صُنعت بمحبة، مخصوص إلكِ ♡</footer>
+  </main>
+</div>
+<script>
+/* غيّر كلمة السر هنا قبل نشر الموقع. هذه حماية بسيطة وليست قفلًا آمنًا للمعلومات الخاصة. */
+const GIFT_PASSWORD = "N-SH-08/17";
+const form = document.getElementById("unlockForm");
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  const entered = document.getElementById("pass").value;
+  if(entered === GIFT_PASSWORD){
+    document.getElementById("lock").classList.add("hidden");
+    document.getElementById("gift").classList.remove("hidden");
+    document.getElementById("error").textContent = "";
+    loadPhotos();
+    window.scrollTo({top:0,behavior:"smooth"});
+  } else {
+    document.getElementById("error").textContent = "مش هي الكلمة 🙈 جرّبي مرة ثانية.";
+  }
+});
+function loadPhotos(){
+  const gallery = document.getElementById("gallery");
+  const names = ["photo1.jpg","photo2.jpg","photo3.jpg","photo4.jpg","photo5.jpg","photo6.jpg"];
+  gallery.innerHTML = "";
+  names.forEach((name, i) => {
+    const box = document.createElement("div");
+    box.className = "photo";
+    const img = document.createElement("img");
+    img.src = "photos/" + name;
+    img.alt = "صورة ذكرى " + (i+1);
+    img.onerror = () => { box.textContent = "أضف " + name + " إلى مجلد photos"; };
+    box.appendChild(img);
+    gallery.appendChild(box);
+  });
+}
+document.getElementById("surpriseBtn").addEventListener("click",()=>{
+  document.getElementById("surprise").classList.toggle("hidden");
+});
+</script>
+</body>
+</html>
